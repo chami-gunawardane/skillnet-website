@@ -1,11 +1,11 @@
 import React from 'react'
+import Navbar from '../../components/Navbar'
 
 function index() {
   return (
     <div>
-      <h1 class="text-3xl font-bold  text-cyan-900">
-    Welcome to SKILLNET webpage
-  </h1>
+      <Navbar />
+      <div>Domain Page</div>
     </div>
   )
 }
