@@ -1,20 +1,16 @@
 import React from "react";
-import Navbar from "../../components/Navbar"; // Assuming this path is correct
-
-// Image Imports for Tools & Technologies
+import Navbar from "../../components/Navbar"; 
 import aws from "../../assets/aws-logo.png";
 import flask from "../../assets/flask-logo.png";
 import github from "../../assets/GitHub-logo.png";
-import mongodb from "../../assets/MongoDB-Logo.png"; // Corrected casing
+import mongodb from "../../assets/MongoDB-Logo.png"; 
 import node from "../../assets/node-logo.jpg";
-import python from "../../assets/Python-logo.png"; // Corrected spelling
+import python from "../../assets/Python-logo.png"; 
 import tailwind from "../../assets/tailwind-logo.png";
 import tensorFlow from "../../assets/TensorFlow-logo.png";
 import vscode from "../../assets/vscode-logo.png";
 import react from "../../assets/react-logo.png";
-// import homeImage from "../../assets/home image.jpg"; // Image no longer used in header
 
-// Data for Tools and Technologies
 const tools = [
   { src: python, alt: "Python Logo", name: "Python" },
   { src: react, alt: "React Logo", name: "React" },
