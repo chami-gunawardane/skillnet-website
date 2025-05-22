@@ -71,10 +71,21 @@ const DomainPage = () => {
           <section className="border p-4">
             <h3 className="font-bold mb-2">Research Problem</h3>
             <div className="text-xl text-justify">
-            <p>
-              This research focuses on developing an integrated online learning platform that addresses major gaps in current educational technologies. Existing systems often work in isolation—online proctoring lacks continuous authentication, language tools miss real-time evaluation, coding platforms offer limited feedback, and job matching relies on basic keyword searches. The proposed solution combines computer vision for secure proctoring, NLP for detailed language assessment, adaptive code analysis for programming evaluation, and semantic AI for intelligent job matching. By unifying these technologies, the platform ensures academic integrity, offers accurate skill assessment, and helps students better prepare for real-world job opportunities through a seamless learning experience.
-
-            </p>
+              <p>
+                This research focuses on developing an integrated online
+                learning platform that addresses major gaps in current
+                educational technologies. Existing systems often work in
+                isolation—online proctoring lacks continuous authentication,
+                language tools miss real-time evaluation, coding platforms offer
+                limited feedback, and job matching relies on basic keyword
+                searches. The proposed solution combines computer vision for
+                secure proctoring, NLP for detailed language assessment,
+                adaptive code analysis for programming evaluation, and semantic
+                AI for intelligent job matching. By unifying these technologies,
+                the platform ensures academic integrity, offers accurate skill
+                assessment, and helps students better prepare for real-world job
+                opportunities through a seamless learning experience.
+              </p>
             </div>
             <img
               src="/problem-illustration.png"
@@ -86,10 +97,21 @@ const DomainPage = () => {
           <section className="border p-4 overflow-auto">
             <h3 className="font-bold mb-2">Research Gap</h3>
             <div className="text-xl text-justify">
-            <p>
-              This research focuses on developing an integrated online learning platform that addresses major gaps in current educational technologies. Existing systems often work in isolation—online proctoring lacks continuous authentication, language tools miss real-time evaluation, coding platforms offer limited feedback, and job matching relies on basic keyword searches. The proposed solution combines computer vision for secure proctoring, NLP for detailed language assessment, adaptive code analysis for programming evaluation, and semantic AI for intelligent job matching. By unifying these technologies, the platform ensures academic integrity, offers accurate skill assessment, and helps students better prepare for real-world job opportunities through a seamless learning experience.
-
-            </p>
+              <p>
+                This research focuses on developing an integrated online
+                learning platform that addresses major gaps in current
+                educational technologies. Existing systems often work in
+                isolation—online proctoring lacks continuous authentication,
+                language tools miss real-time evaluation, coding platforms offer
+                limited feedback, and job matching relies on basic keyword
+                searches. The proposed solution combines computer vision for
+                secure proctoring, NLP for detailed language assessment,
+                adaptive code analysis for programming evaluation, and semantic
+                AI for intelligent job matching. By unifying these technologies,
+                the platform ensures academic integrity, offers accurate skill
+                assessment, and helps students better prepare for real-world job
+                opportunities through a seamless learning experience.
+              </p>
             </div>
             <img
               src="/research-gap-table.png"
@@ -100,49 +122,97 @@ const DomainPage = () => {
         </div>
 
         <section className="text-center">
-
           <div className="grid md:grid-cols-2 gap-4 text-left">
             <div className="border p-4">
               <h3 className="font-bold mb-2">Research Objective</h3>
               <div className="text-xl text-justify">
-            <p>
-              This research aims to develop an advanced e-learning platform that enhances the integrity and credibility of online certifications. It integrates real-time AI proctoring, continuous facial recognition, and behavioral analysis to prevent cheating. The platform uses NLP and deep learning for holistic language assessment and dynamic code evaluation to measure programming skills. It also employs semantic AI for accurate job matching, ensuring secure, skill-based certifications that are meaningful to learners and employers alike.
-
-            </p>
-            </div>
+                <p>
+                  This research aims to develop an advanced e-learning platform
+                  that enhances the integrity and credibility of online
+                  certifications. It integrates real-time AI proctoring,
+                  continuous facial recognition, and behavioral analysis to
+                  prevent cheating. The platform uses NLP and deep learning for
+                  holistic language assessment and dynamic code evaluation to
+                  measure programming skills. It also employs semantic AI for
+                  accurate job matching, ensuring secure, skill-based
+                  certifications that are meaningful to learners and employers
+                  alike.
+                </p>
+              </div>
             </div>
             <div className="border p-4">
               <h3 className="font-bold mb-2">Methodology</h3>
               <div className="text-xl text-justify">
-            <p>
-              This research aims to develop an advanced e-learning platform that enhances the integrity and credibility of online certifications. It integrates real-time AI proctoring, continuous facial recognition, and behavioral analysis to prevent cheating. The platform uses NLP and deep learning for holistic language assessment and dynamic code evaluation to measure programming skills. It also employs semantic AI for accurate job matching, ensuring secure, skill-based certifications that are meaningful to learners and employers alike.
-
-            </p>
-            </div>
+                <p>
+                  This research aims to develop an advanced e-learning platform
+                  that enhances the integrity and credibility of online
+                  certifications. It integrates real-time AI proctoring,
+                  continuous facial recognition, and behavioral analysis to
+                  prevent cheating. The platform uses NLP and deep learning for
+                  holistic language assessment and dynamic code evaluation to
+                  measure programming skills. It also employs semantic AI for
+                  accurate job matching, ensuring secure, skill-based
+                  certifications that are meaningful to learners and employers
+                  alike.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         <section>
-  <div className="border p-4">
-  <h2 className="text-3xl font-bold mb-4">Tools and Technologies</h2>
-  <div className="grid grid-cols-5 gap-4 justify-items-center">
-    <img src={phython} alt="Python" className="w-16 h-16 object-contain" />
-    <img src={react} alt="React" className="w-16 h-16 object-contain" />
-    <img src={vscode} alt="MongoDB" className="w-16 h-16 object-contain" />
-    <img src={aws} alt="AWS" className="w-16 h-16 object-contain" />
-    <img src={flask} alt="Node.js" className="w-16 h-16 object-contain" />
-    <img src={tailwind} alt="Tailwind" className="w-16 h-16 object-contain" />
-    <img src={github} alt="GitHub" className="w-16 h-16 object-contain" />
-    <img src={Mongodb} alt="VS Code" className="w-16 h-16 object-contain" />
-    <img src={node} alt="Flask" className="w-16 h-16 object-contain" />
-    <img src={tensorFlow} alt="TensorFlow" className="w-16 h-16 object-contain" />
-  </div>
-</div>
-
-</section>
-
-
+          <div className="border p-4">
+            <h2 className="text-3xl font-bold mb-4">Tools and Technologies</h2>
+            <div className="grid grid-cols-5 gap-4 justify-items-center">
+              <img
+                src={phython}
+                alt="Python"
+                className="w-16 h-16 object-contain"
+              />
+              <img
+                src={react}
+                alt="React"
+                className="w-16 h-16 object-contain"
+              />
+              <img
+                src={vscode}
+                alt="MongoDB"
+                className="w-16 h-16 object-contain"
+              />
+              <img src={aws} alt="AWS" className="w-16 h-16 object-contain" />
+              <img
+                src={flask}
+                alt="Node.js"
+                className="w-16 h-16 object-contain"
+              />
+              <img
+                src={tailwind}
+                alt="Tailwind"
+                className="w-16 h-16 object-contain"
+              />
+              <img
+                src={github}
+                alt="GitHub"
+                className="w-16 h-16 object-contain"
+              />
+              <img
+                src={Mongodb}
+                alt="VS Code"
+                className="w-16 h-16 object-contain"
+              />
+              <img
+                src={node}
+                alt="Flask"
+                className="w-16 h-16 object-contain"
+              />
+              <img
+                src={tensorFlow}
+                alt="TensorFlow"
+                className="w-16 h-16 object-contain"
+              />
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
