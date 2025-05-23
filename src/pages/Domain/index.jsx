@@ -36,6 +36,7 @@ const SectionCard = ({ title, children, className = "" }) => (
 
 const DomainPage = () => {
   return (
+    <>
     <div className="font-sans bg-slate-50 text-gray-800 min-h-screen">
       <Navbar />
 
@@ -170,10 +171,17 @@ const DomainPage = () => {
         </SectionCard>
       </main>
 
-      <footer className="text-center py-8 bg-gray-800 text-gray-300">
-        <p>© {new Date().getFullYear()} Your Project Name. All rights reserved.</p>
-      </footer>
+      
     </div>
+    <footer className={`bg-slate-800 text-slate-300 text-center py-10`}>
+        <div className="container mx-auto px-6">
+          <p>© {new Date().getFullYear()} SkillNet. All rights reserved.</p>
+          <p className="text-sm text-slate-400 mt-2">
+            Building a Smarter Future, Together.
+          </p>
+        </div>
+      </footer>
+    </>
   );
 };
 
