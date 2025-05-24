@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../../components/Navbar"; // Assuming path is correct
+import Navbar from "../../components/Navbar"; 
 import HomeImage from "../../assets/homeImage.jpg";
 
 export default function HomePage() {
@@ -24,22 +24,16 @@ export default function HomePage() {
       <Navbar />
 
       <main>
-        {/* Hero Section - Updated */}
         <section
           className="relative text-white overflow-hidden"
           aria-labelledby="hero-heading"
         >
-          {/* Gradient Background */}
           <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 via-blue-400 to-indigo-500"></div>
 
-          {/* Main content wrapper for hero - Vertical padding (py-*) REMOVED from here */}
-          {/* lg:items-stretch will make both columns (text and image) the same height */}
           <div
             className={`relative container mx-auto px-6 flex flex-col lg:flex-row lg:items-stretch`}
           >
-            {/* Text Content */}
-            {/* Vertical padding (py-*) ADDED HERE. This column's height (content + padding) will define row height. */}
-            {/* mb-12 for spacing when stacked on mobile, lg:mb-0 to remove it on larger screens */}
+
             <div className="text-center lg:text-left z-10 flex flex-col justify-center py-20 md:py-28 lg:py-32 mb-12 lg:mb-0">
               <h1
                 id="hero-heading"
@@ -60,18 +54,13 @@ export default function HomePage() {
                   onClick={scrollToAbout}
                   className={`px-8 py-3 bg-${buttonPrimaryColor} text-white border-2 border-white font-semibold rounded-lg hover:bg-${buttonPrimaryHoverColor} transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-${buttonPrimaryRingColor} focus:ring-opacity-75 shadow-md hover:shadow-lg cursor-pointer`}
                 >
-                  Discover How
+                  What is this about
                 </button>
               </div>
             </div>
 
-            {/* Image Content Column */}
-            {/* This column has NO vertical padding. It will stretch to match the height of the left (padded text) column. */}
-            {/* The image will fill this stretched column from edge to edge vertically. */}
-            {/* mt-12 lg:mt-0 for this div is not strictly needed if text div handles bottom margin on mobile */}
             <div className="lg:w-2/5 xl:w-1/2 z-10">
               {" "}
-              {/* Removed 'flex' if it was causing issues, direct child img will handle sizing */}
               <img
                 src={HomeImage}
                 alt="People silhouettes with an upward arrow signifying career growth"
@@ -81,7 +70,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* About the Project Section (structure remains the same) */}
         <section
           id="about-project"
           className={`py-20 md:py-28 bg-${subtleBgColor}`}

@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar';
 
 const milestonesData = [
   {
-    date: "July 34th 2024",
+    date: "July 4th 2024",
     title: "Project Proposal",
     description: "Presented to a panel of judges in order to provide an overview of the proposed research.",
     marks: "6%"
@@ -72,9 +72,7 @@ const MilestonesPage = () => {
           initial="hidden"
           animate="visible"
         >
-          {/* Central Timeline Bar for Desktop */}
           <div className="hidden md:block absolute top-0 bottom-0 left-1/2 w-1 bg-sky-300 transform -translate-x-1/2"></div>
-          {/* Left Timeline Bar for Mobile */}
           <div className="md:hidden absolute top-0 bottom-0 left-4 w-1 bg-sky-300 transform -translate-x-1/2"></div>
 
           {milestonesData.map((milestone, index) => {
@@ -83,12 +81,10 @@ const MilestonesPage = () => {
               <motion.div
                 key={index}
                 className="mb-4 relative"
-                custom={isLeftAligned} // Pass to variants if needed for direction
+                custom={isLeftAligned} 
                 variants={itemVariants}
               >
-                {/* Timeline Circle - Desktop */}
                 <div className="hidden md:block absolute top-0 left-1/2 w-6 h-6 bg-white rounded-full border-4 border-sky-500 transform -translate-x-1/2 -translate-y-[-8px] shadow-md"></div>
-                {/* Timeline Circle - Mobile */}
                 <div className="md:hidden absolute top-0 left-4 w-6 h-6 bg-white rounded-full border-4 border-sky-500 transform -translate-x-1/2 -translate-y-[-8px] shadow-md"></div>
 
                 <div className={`
@@ -124,7 +120,7 @@ const MilestonesPage = () => {
                         -left-[calc(theme(spacing.12)_-_theme(spacing.4)_-_theme(spacing.2))] 
                         sm:-left-[calc(theme(spacing.12)_-_theme(spacing.4)_-_8px)]
                         -left-[30px)]
-                      `}></div> {/* Approx: pl-12 (48px) - left-4 (16px for line) - half pointer width (8px) = 24px from banner edge */}
+                      `}></div> 
                     </div>
                     
                     {/* Milestone Details Card */}
