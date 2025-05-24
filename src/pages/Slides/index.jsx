@@ -37,7 +37,7 @@ const FilePIcon = ({ className, iconColor = "currentColor" }) => (
   </svg>
 );
 
-const CloudDownloadIcon = ({ className }) => (
+const EyeIcon = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className={className}
@@ -45,15 +45,14 @@ const CloudDownloadIcon = ({ className }) => (
     height="24"
     viewBox="0 0 24 24"
     strokeWidth="1.5"
-    stroke="currentColor"
+    stroke="currentColor" 
     fill="none"
     strokeLinecap="round"
     strokeLinejoin="round"
   >
     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-    <path d="M19 18a3.5 3.5 0 0 0 0 -7h-1a5 4.5 0 0 0 -11 -2a4.6 4.4 0 0 0 -2.1 8.4" />
-    <path d="M12 13l0 9" />
-    <path d="M9 20l3 3l3 -3" />
+    <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+    <path d="M21 12c-2.4 4 -5.4 6 -9 6s-6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6s6.6 2 9 6" />
   </svg>
 );
 
@@ -61,13 +60,13 @@ const slidesData = [
   {
     title: "Proposal Presentation",
     id: "proposal",
-    fileUrl: "https://drive.google.com/drive/folders/1K2jrf5nn_Yx8yeuD3IAWAHNtAo356Uxj?usp=drive_link", 
-    fileName: "Proposal_Presentation.pptx",
+    fileUrl: "https://drive.google.com/drive/folders/1K2jrf5nn_Yx8yeuD3IAWAHNtAo356Uxj?usp=drive_link",
+    fileName: "Proposal_Presentation.pptx", 
   },
   {
     title: "Progress Presentation -1",
     id: "progress1",
-    fileUrl: "https://drive.google.com/drive/folders/11mjenDTNbO-L9mD1GxifExTzSe_IswVP?usp=drive_link", 
+    fileUrl: "https://drive.google.com/drive/folders/11mjenDTNbO-L9mD1GxifExTzSe_IswVP?usp=drive_link",
     fileName: "Progress_Presentation_1.pptx",
   },
   {
@@ -85,61 +84,49 @@ const slidesData = [
 ];
 
 function SlidesPage() {
-  const handleDownload = (fileUrl, fileName) => {
-   
-    if (fileUrl.includes("drive.google.com/drive/folders")) {
-        window.open(fileUrl, '_blank');
-    } else {
-        const link = document.createElement("a");
-        link.href = fileUrl;
-        link.setAttribute("download", fileName || "download");
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }
+  const handleView = (fileUrl, fileName) => {
+    window.open(fileUrl, '_blank');
   };
 
   return (
     <>
-    <div className=" bg-slate-50">
-      <Navbar />
-      <div className="container mx-auto px-4 py-12 sm:py-16">
-        {/* Updated grid classes here */}
-        <div className=" flex justify-center ">
+      <div className=" bg-slate-50">
+        <Navbar />
+        <div className="container mx-auto px-4 py-12 sm:py-16">
+          <div className=" flex justify-center ">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {slidesData.map((slide) => (
+                <div
+                  key={slide.id}
+                  className="bg-white p-6 rounded-xl border-2 border-cyan-200 shadow-lg w-full max-w-[300px] flex flex-col items-center"
+                >
+                  <h2 className="text-lg font-semibold text-cyan-700 text-center mb-4 min-h-[3.5rem] flex items-center justify-center">
+                    {slide.title}
+                  </h2>
+                  <FilePIcon className="w-16 h-16 mb-6" iconColor="#0e7490" /> 
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {slidesData.map((slide) => (
-            <div
-              key={slide.id}
-              className="bg-white p-6 rounded-xl border-2 border-cyan-200 shadow-lg w-full max-w-[300px] flex flex-col items-center"
-            >
-              <h2 className="text-lg font-semibold text-cyan-700 text-center mb-4 min-h-[3.5rem] flex items-center justify-center">
-                {slide.title}
-              </h2>
-              <FilePIcon className="w-16 h-16 mb-6" iconColor="#0e7490" /> {/* text-cyan-700 */}
-              
-              <button
-                type="button"
-                onClick={() => handleDownload(slide.fileUrl, slide.fileName)}
-                className={`
-                  flex items-center justify-center space-x-2 py-2.5 px-6 rounded-lg 
-                  font-medium transition-colors duration-150 w-full text-sm
-                  bg-white text-cyan-700 border border-cyan-600 
-                  hover:bg-sky-500 hover:text-white hover:border-sky-500 
-                  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-400
-                `}
-              >
-                <CloudDownloadIcon className="w-5 h-5" />
-                <span>Download</span>
-              </button>
+                  <button
+                    type="button"
+                    onClick={() => handleView(slide.fileUrl, slide.fileName)} 
+                    className={`
+                      flex items-center justify-center space-x-2 py-2.5 px-6 rounded-lg
+                      font-medium transition-colors duration-150 w-full text-sm
+                      bg-white text-cyan-700 border border-cyan-600
+                      hover:bg-sky-500 hover:text-white hover:border-sky-500
+                      focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-400
+                    `}
+                  >
+                    <EyeIcon className="w-5 h-5" /> 
+                    <span>View</span> 
+                  </button>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <footer className={`bg-slate-800 text-slate-300 text-center py-10`}>
+      <footer className={`bg-slate-800 text-slate-300 text-center py-10`}>
         <div className="container mx-auto px-6">
           <p>© {new Date().getFullYear()} SkillNet. All rights reserved.</p>
           <p className="text-sm text-slate-400 mt-2">
@@ -147,7 +134,7 @@ function SlidesPage() {
           </p>
         </div>
       </footer>
-      </>
+    </>
   );
 }
 
