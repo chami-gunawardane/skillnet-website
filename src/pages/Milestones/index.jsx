@@ -1,32 +1,31 @@
-// src/components/MilestonesPage.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '../../components/Navbar';
 
 const milestonesData = [
   {
-    date: "April 3rd 2023",
+    date: "July 34th 2024",
     title: "Project Proposal",
     description: "Presented to a panel of judges in order to provide an overview of the proposed research.",
-    marks: "5%"
+    marks: "6%"
   },
   {
-    date: "25th May 2023",
+    date: "4th Dec 2024",
     title: "Progress Presentation - 1",
     description: "Evaluation of 50% completion of the proposed solution by a panel of judges.",
-    marks: "10%"
+    marks: "15%"
   },
   {
-    date: "07th Sept 2023",
+    date: "18th Mar 2024",
     title: "Progress Presentation - 2",
     description: "Evaluation of 90% completion of the proposed solution by a panel of judges.",
     marks: "18%"
   },
   {
-    date: "30th October 2023",
+    date: "26th May 2025",
     title: "Final Assessment & Viva",
     description: "Final evaluation of the completed product.",
-    marks: "25%"
+    marks: "20%"
   }
 ];
 
