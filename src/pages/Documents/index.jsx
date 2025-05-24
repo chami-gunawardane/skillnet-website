@@ -1,27 +1,26 @@
 import React, { useState } from "react";
-import Navbar from "../../components/Navbar"; 
-import { CloudArrowDownIcon } from "@heroicons/react/24/outline"; 
-
+import Navbar from "../../components/Navbar";
+import { CloudArrowDownIcon, EyeIcon } from "@heroicons/react/24/outline";
 
 const documentCategories = [
   {
     id: "proposalDocument",
     title: "Proposal Document",
-    documentIdentifier: "2023-045",
+    documentIdentifier: "24-25J-099",
     downloadLink:
-      "https://mysliit-my.sharepoint.com/:f:/g/personal/it21356704_my_sliit_lk/EjHtSwdoA4JGtn1nYbv-EAsBYbz-LxgmOaVtbYJvifxaUg?e=JASr3n",
+      "https://drive.google.com/drive/folders/1MzT9gyWgZhnzmGyjWeZP0LMnJ7v0TPvN?usp=sharing",
   },
   {
     id: "statusDocument1",
     title: "Check List Document - 1",
-    documentIdentifier: "2023-051-A",
+    documentIdentifier: "24-25J-099-A",
     downloadLink:
       "https://drive.google.com/drive/folders/105E8qIyBfvxW2OEDYpu2qMgeXj8tX4JN?usp=drive_link",
   },
   {
     id: "statusDocument2",
     title: "Check List Document - 2",
-    documentIdentifier: "2023-051-B",
+    documentIdentifier: "24-25J-099-B",
     downloadLink:
       "https://drive.google.com/drive/folders/10sROQrUDSiJuYqZu5p1_MRLkb-V-J8RT?usp=drive_link",
   },
@@ -64,9 +63,9 @@ const documentCategories = [
 ];
 
 function DocumentsPage() {
-  const [activeTab, setActiveTab] = useState(null); 
+  const [activeTab, setActiveTab] = useState(null);
   const handleTabClick = (tabId) => {
-    setActiveTab(activeTab === tabId ? null : tabId); 
+    setActiveTab(activeTab === tabId ? null : tabId);
   };
 
   return (
@@ -74,7 +73,6 @@ function DocumentsPage() {
       <div className="bg-slate-50">
         <Navbar />
         <div className="container mx-auto px-4 py-8">
-
           <div className="max-w-3xl mx-auto space-y-8 mt-12 mb-28">
             {documentCategories.map((doc) => (
               <div key={doc.id}>
@@ -100,28 +98,26 @@ function DocumentsPage() {
                           <div
                             key={subDoc.id}
                             className="bg-white border-2 border-sky-300 rounded-2xl p-4 flex flex-col items-center space-y-4"
-                            
-                            style={{ width: "130px" }} 
+                            style={{ width: "130px" }}
                           >
                             <h3
                               className="text-md font-semibold text-sky-700 text-center"
-                              style={{ minHeight: "2.5em" }} 
+                              style={{ minHeight: "2.5em" }}
                             >
                               {subDoc.title}
                             </h3>
                             <a
                               href={subDoc.downloadLink}
-                              download
                               target="_blank"
                               rel="noopener noreferrer"
                               className="inline-flex items-center justify-center px-3 py-2 border-2 border-sky-300 rounded-full text-sm font-medium text-black bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-sky-400 transition-colors"
-                              style={{ width: "110px" }} 
+                              style={{ width: "110px" }}
                             >
-                              <CloudArrowDownIcon
-                                className="h-5 w-5 mr-1.5 text-black" 
+                              <EyeIcon 
+                                className="h-5 w-5 mr-1.5 text-black"
                                 aria-hidden="true"
                               />
-                              Download
+                              View
                             </a>
                           </div>
                         ))}
@@ -133,21 +129,20 @@ function DocumentsPage() {
                         </span>
                         <a
                           href={doc.downloadLink}
-                          download
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-flex items-center px-5 py-2.5 border border-gray-300 rounded-full text-base font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 transition-colors"
                         >
-                          <CloudArrowDownIcon
+                          <EyeIcon 
                             className="h-5 w-5 mr-2 text-sky-600"
                             aria-hidden="true"
                           />
-                          Download
+                          View 
                         </a>
                       </div>
                     ) : (
                       <div className="p-6 text-center text-gray-500">
-                        No specific documents available for download in this
+                        No specific documents available for viewing in this
                         section.
                       </div>
                     )}
