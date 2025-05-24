@@ -71,7 +71,7 @@ function DocumentsPage() {
 
   return (
     <>
-      <div className="min-h-screen bg-slate-50">
+      <div className="h-[700px] bg-slate-50">
         <Navbar />
         <div className="container mx-auto px-4 py-8">
 
