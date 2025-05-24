@@ -71,11 +71,11 @@ function DocumentsPage() {
 
   return (
     <>
-      <div className="h-[700px] bg-slate-50">
+      <div className="bg-slate-50">
         <Navbar />
         <div className="container mx-auto px-4 py-8">
 
-          <div className="max-w-3xl mx-auto space-y-8">
+          <div className="max-w-3xl mx-auto space-y-8 mt-12 mb-28">
             {documentCategories.map((doc) => (
               <div key={doc.id}>
                 <button
