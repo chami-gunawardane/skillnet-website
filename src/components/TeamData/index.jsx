@@ -2,7 +2,7 @@ import Supervisor from "../../assets/Supervisor.jpeg";
 import cosupervisor from "../../assets/Cosupervisor.jpeg"; 
 import inthi from "../../assets/Inthi.jpeg"; 
 import chami from "../../assets/Chami.jpeg"; 
-import tharidu from "../../assets/Tharidu.jpeg"; 
+import tharindu from "../../assets/Tharidu.jpeg"; 
 import vishal from "../../assets/Vishal.jpeg"; 
 
 export const supervisors = [
@@ -45,7 +45,7 @@ export const teamMembers = [
     id: 5,
     name: "Liyanaarachchi V.K",
     role: "Team Member",
-    imageUrl: tharidu,
+    imageUrl: vishal,
     linkedinUrl: "https://www.linkedin.com/in/vishal-liyanaarachchi/",
     email: "mailto:liyanaarachchi.v@example.com",
   },
@@ -53,7 +53,7 @@ export const teamMembers = [
     id: 6,
     name: "Kumara W.H.T.S",
     role: "Team Member",
-    imageUrl: vishal,
+    imageUrl: tharindu,
     linkedinUrl: "https://www.linkedin.com/in/tharindusandaruwan/",
     email: "mailto:kumara.w@example.com",
   },
