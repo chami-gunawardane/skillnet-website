@@ -60,25 +60,25 @@ const slidesData = [
   {
     title: "Proposal Presentation",
     id: "proposal",
-    fileUrl: "https://drive.google.com/drive/folders/1K2jrf5nn_Yx8yeuD3IAWAHNtAo356Uxj?usp=drive_link",
+    fileUrl: "https://docs.google.com/presentation/d/1JPPfqcCL5TwN0dkAGYk1SI9iuiaA8Xqp/edit?usp=drive_link&ouid=116553326166076009192&rtpof=true&sd=true",
     fileName: "Proposal_Presentation.pptx", 
   },
   {
     title: "Progress Presentation -1",
     id: "progress1",
-    fileUrl: "https://drive.google.com/drive/folders/11mjenDTNbO-L9mD1GxifExTzSe_IswVP?usp=drive_link",
+    fileUrl: "https://docs.google.com/presentation/d/1Nzu0smAwG4IXi_-Ag86UzEMXr-uOaZDx/edit?usp=drive_link&ouid=116553326166076009192&rtpof=true&sd=true",
     fileName: "Progress_Presentation_1.pptx",
   },
   {
     title: "Progress Presentation -2",
     id: "progress2",
-    fileUrl: "https://drive.google.com/drive/folders/1aidquXid8BBcV8KXTDcC4hrFG0N6GAcZ?usp=drive_link",
+    fileUrl: "https://docs.google.com/presentation/d/1S5b-x7kfQQoTqkIxQAJVeQ4-Oa0BV1ZQ/edit?usp=drive_link&ouid=116553326166076009192&rtpof=true&sd=true",
     fileName: "Progress_Presentation_2.pptx",
   },
   {
     title: "Final Presentation",
     id: "final",
-    fileUrl: "/downloads/Final_Presentation.pptx", 
+    fileUrl: "https://docs.google.com/presentation/d/1dRbue-RHfg-3yTkNwA8UOPww-W9cCI8Y/edit?usp=sharing&ouid=116553326166076009192&rtpof=true&sd=true", 
     fileName: "Final_Presentation.pptx",
   },
 ];
