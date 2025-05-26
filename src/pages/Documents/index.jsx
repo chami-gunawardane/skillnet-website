@@ -22,7 +22,7 @@ const documentCategories = [
     title: "Check List Document - 2",
     documentIdentifier: "24-25J-099-B",
     downloadLink:
-      "https://drive.google.com/drive/folders/10sROQrUDSiJuYqZu5p1_MRLkb-V-J8RT?usp=drive_link",
+      "https://docs.google.com/spreadsheets/d/16Ptnn_QmVuO-yxc-4zP5iVm0OubxM0NT/edit?usp=drive_link&ouid=116553326166076009192&rtpof=true&sd=true",
   },
   {
     id: "finalReports",
